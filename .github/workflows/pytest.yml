@@ -18,7 +18,7 @@ jobs:
     - name: Install requirements
       run: poetry install
     - name: Run tests and collect coverage
-      run: pytest --cov .
+      run: poetry run pytest --cov .
     - name: Upload coverage reports to Codecov
       run: |
         curl -Os https://cli.codecov.io/latest/linux/codecov
