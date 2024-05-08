@@ -19,7 +19,7 @@ jobs:
       run: poetry install
     - name: Run tests and collect coverage
       run: poetry run pytest --cov=pygolomb tests/
-    - run: ls
+    - run: ls -a
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v4.0.1
       with:
