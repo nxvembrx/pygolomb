@@ -1,16 +1,22 @@
-# pygolomb
+# PyGolomb
 
-Simple GUI tool for testing pseudorandom sequences for conformity with [Golomb’s randomness postulates](https://www.iitg.ac.in/pinaki/Golomb.pdf)
+![PyPI - Version](https://img.shields.io/pypi/v/pygolomb)
+![GitHub License](https://img.shields.io/github/license/alxwnth/pygolomb)
+![GitHub Release](https://img.shields.io/github/v/release/alxwnth/pygolomb)
 
-Welcome to the program for verifying binary sequences for conformity with Golomb’s randomness postulates! Each tab has a short information about each of three postulates. Also there's an ability to enter the sequence yourself or load it from a file. You can store resulting information in a file to show it to the professor or save for later use.
+> A small Python library to test binary sequences with Golomb's randomness postulates.
 
-This program was developed as part of the course work in my second year of uni. Feel free to use it to learn about Golomb’s randomness postulates or modify it to your liking.
+## Installation
 
-Warning! When I wrote this, I was very young and stupid and knew nothing about things like dependency management. One of the caveats of this is that you will have to install dependencies yourself. Maybe I will refactor it someday but maybe not.
+Python >=3.10 is required.
 
-## Running
+```
+pip install pygolomb
+```
 
-Creating venv and installing dependencies.
+## Developing
+
+Create venv and install dependencies.
 
 ```
 python3 -m venv .venv
@@ -30,3 +36,24 @@ To check test coverage:
 ```
 pytest --cov=pygolomb tests/
 ```
+
+## Roadmap
+
+The overall code quality is largely at the same level it was back in 2018. This is to be improved in the future.
+
+## GUI application
+
+There are no plans to have a new GUI at the moment. The old Tkinter application remains in `gui` directory only for historic purposes.
+
+## Contributing
+
+Contributions are welcome. Please fork the project and use feature a feature branch. For bugs and suggestions, please open an issue.
+
+## License
+
+The project is licensed under the GNU Lesser General Public License. See [COPYING](/COPYING) for full terms.
+
+## Acknowledgements
+
+1. Menezes, A.J., Van Oorschot, P.C. and Vanstone, S.A. (2018) Handbook of Applied Cryptography. 1st edn. CRC Press. Available at: https://doi.org/10.1201/9780429466335.
+2. Pinaki, M. (no date) ‘Golomb’s Randomness Postulates’. Available at: https://www.iitg.ac.in/pinaki/Golomb.pdf (Accessed: 8 May 2024).
