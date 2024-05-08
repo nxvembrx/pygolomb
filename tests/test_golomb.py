@@ -4,6 +4,7 @@ from pygolomb.golomb import (
     is_first_postulate_true,
     is_second_postulate_true,
     is_third_postulate_true,
+    is_pn_sequence,
 )
 
 SEQUENCE = "011001000111100111"
@@ -38,3 +39,13 @@ def test_third_postulate():
 def test_third_postulate_err_sequence():
     """When given a non-pn-sequence, the test for the third postulate should return False."""
     assert not is_third_postulate_true(SEQUENCE)
+
+
+def test_pn():
+    """When given a pn-sequence, the tests for all postulates should return True."""
+    assert is_pn_sequence(PN_SEQUENCE)
+
+
+def test_pn_err_sequence():
+    """When given a non pn-sequence, the tests for all postulates should return False."""
+    assert not is_pn_sequence(SEQUENCE)

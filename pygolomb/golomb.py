@@ -5,6 +5,7 @@ def is_first_postulate_true(sequence):
     """Tests whether the sequence satisfies the first postulate
 
     In the cycle s^N of s, the number of 1's differs from the number of 0's by at most 1.
+    (Menezes, Van Oorschot and Vanstone, 2018)
 
     Args:
         sequence: A string with a binary sequence to be tested.
@@ -25,6 +26,7 @@ def is_second_postulate_true(sequence):
 
     In the cycle, at least half the runs have length 1, at least one-fourth have length 2,
     at least one-eighth have length 3, etc., as long as the number of runs so indicated exceeds 1.
+    (Menezes, Van Oorschot and Vanstone, 2018)
 
     Args:
         sequence: A string with a binary sequence to be tested.
@@ -50,6 +52,7 @@ def is_third_postulate_true(sequence):
     """Tests whether the sequence satisfies the second postulate
 
     The autocorrelation function C(t) is two-valued.
+    (Menezes, Van Oorschot and Vanstone, 2018)
 
     Args:
         sequence: A string with a binary sequence to be tested.
@@ -65,6 +68,26 @@ def is_third_postulate_true(sequence):
             return False
 
     return True
+
+
+def is_pn_sequence(sequence):
+    """A shorthand method to test if the sequence is a pseudo-noise sequence,
+    satisfying all three postulates.
+
+    Args:
+        sequence: A string with a binary sequence to be tested.
+    Returns:
+        bool: Whether the sequence is a pseudo-noise (pn) sequence.
+
+    """
+    if (
+        is_first_postulate_true(sequence)
+        and is_second_postulate_true(sequence)
+        and is_third_postulate_true(sequence)
+    ):
+        return True
+
+    return False
 
 
 def __get_streaks(sequence):
