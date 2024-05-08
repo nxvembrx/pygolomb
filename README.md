@@ -17,3 +17,16 @@ python3 -m venv .venv
 . .venv/bin/activate
 poetry install
 ```
+
+## Testing
+
+```
+. .venv/bin/activate
+pytest
+```
+
+To check test coverage:
+
+```
+pytest --cov=pygolomb tests/
+```
