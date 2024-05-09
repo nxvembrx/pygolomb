@@ -53,6 +53,8 @@ Contributions are welcome. Please fork the project and use feature a feature bra
 
 The project is licensed under the GNU Lesser General Public License. See [COPYING](/COPYING) for full terms.
 
+Original source code before reassigning the license, and the source code in the `gui` directory is licensed under the MIT license.
+
 ## Acknowledgements
 
 1. Menezes, A.J., Van Oorschot, P.C. and Vanstone, S.A. (2018) Handbook of Applied Cryptography. 1st edn. CRC Press. Available at: https://doi.org/10.1201/9780429466335.
