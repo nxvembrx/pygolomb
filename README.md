@@ -1,8 +1,8 @@
 # PyGolomb
 
-![PyPI - Version](https://img.shields.io/pypi/v/pygolomb)
-![GitHub License](https://img.shields.io/github/license/alxwnth/pygolomb)
-![GitHub Release](https://img.shields.io/github/v/release/alxwnth/pygolomb)
+[![PyPI - Version](https://img.shields.io/pypi/v/pygolomb)](https://pypi.org/project/pygolomb/)
+[![GitHub License](https://img.shields.io/github/license/alxwnth/pygolomb)](/COPYING)
+[![GitHub Release](https://img.shields.io/github/v/release/alxwnth/pygolomb)](https://github.com/alxwnth/pygolomb/releases)
 [![codecov](https://codecov.io/gh/alxwnth/pygolomb/graph/badge.svg?token=QLNZ5IG1P3)](https://codecov.io/gh/alxwnth/pygolomb)
 
 > A small Python library to test binary sequences with Golomb's randomness postulates.
